@@ -1,4 +1,4 @@
-from draw_text import watermark_text
+# from draw_text import watermark_text
 
 from PIL import Image
 from PIL import ImageDraw
