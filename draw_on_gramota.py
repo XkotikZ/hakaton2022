@@ -1,5 +1,3 @@
-# from draw_text import watermark_text
-
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
@@ -18,9 +16,6 @@ def watermark_text(input_file, output_file, text, pos, f_font=None, f_size=100, 
     if save:
         image.save(output_file)
 
-if __name__ == '__main__':
-    img = 'Shablon_gramoty.jpg'
-    watermark_text(img, 'out.jpg', text='Test!', pos=(200, 300))
 
 def gramota(input_file, output_file, name, full_name, best_in, date, Who, f_font='Шрифт.otf', f_size=50, show=True, save=False):
     text = ['Награждается', f'{name} {full_name}', 'В наминации', best_in,    'Дата',    date,      'Подписал', Who]
